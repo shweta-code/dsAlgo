@@ -1,4 +1,4 @@
-package com.algos.BinarySearch;
+package com.algos.binarySearch;
 
 
 public class CountOccurences {
