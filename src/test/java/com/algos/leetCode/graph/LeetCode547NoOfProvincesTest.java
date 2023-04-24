@@ -11,7 +11,6 @@ public class LeetCode547NoOfProvincesTest {
     @Test
     public void isConnectedThreeCities(){
 
-        // Revise - Define an inline array
         int num = noOfProvinces.findCircleNumNotWorking(new int[][]{{1, 1, 0}, {1, 1, 0}, {0, 0, 1}});
         Assert.assertEquals(2, num);
 
@@ -36,7 +35,6 @@ public class LeetCode547NoOfProvincesTest {
                 {0,1,0,0,0,0,0,0,0,0,0,0,0,1,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,1}};
 
-        // Revise - Define an inline array
         int num = noOfProvinces.findCircleNumNotWorking(connectedArr);
         Assert.assertEquals(8, num);
 
