@@ -9,7 +9,7 @@ import java.util.*;
 // This is wrong as this solution also tries to establish graph relationships within a word , kat does not mean k -> a -> t
 // So , this is wrong
 // A very clean solution is available in the below link
-// TODO Solution -> https://www.codingninjas.com/codestudio/problems/alien-dictionary_630423?leftPanelTab=2
+// Solution -> https://www.codingninjas.com/codestudio/problems/alien-dictionary_630423?leftPanelTab=2
 public class LeetCode269AlienDictionaryWrong {
     public static void main(String[] args) {
 
@@ -139,7 +139,7 @@ public class LeetCode269AlienDictionaryWrong {
             for (int j = 1; j < currWordArr.length; j++) {
 
                 Character currentChar = currWordArr[j];
-                Character prevChar = currWordArr[j - 1];
+                char prevChar = currWordArr[j - 1];
                 GraphNode currCharGraphNode;
                 GraphNode prevCharGraphNode = charToNodeMap.get(prevChar);
                 if (!charToNodeMap.containsKey(currentChar)) {
