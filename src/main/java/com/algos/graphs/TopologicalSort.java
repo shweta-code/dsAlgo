@@ -7,6 +7,9 @@ import java.util.Stack;
 
 // https://practice.geeksforgeeks.org/problems/topological-sort/1
 // https://www.geeksforgeeks.org/topological-sorting/
+
+// For topological Sort, dfs cannot be used as is
+// DFS needs to be tweaked for topological Sort algorithm
 public class TopologicalSort {
 
     // Undirected Graph

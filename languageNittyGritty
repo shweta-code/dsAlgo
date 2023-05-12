@@ -1,0 +1,51 @@
+1. Initialize and define and declare array list together
+ArrayList<String> gfg = new ArrayList<String>() {
+            {
+                add("Geeks");
+                add("for");
+                add("Geeks");
+            }
+        };
+
+2. How to intialize stack?
+    Stack<Integer> <Integer> = new Stack<Integer>()
+    (https://www.geeksforgeeks.org/stack-class-in-java/)
+
+3. There is only call by value in java, not call by reference -
+[Call by Value and Call by Reference in java - javatpoint](https://www.javatpoint.com/call-by-value-and-call-by-reference-in-java)
+See visited[] in graphs/DFS.java
+
+4. This will print '0'.
+ArrayList<ArrayList<Integer>> adj = new ArrayList<>(V);
+
+        System.out.println(adj.size());
+
+5. When you convert stack to array, toArray implementation pops out elements and put in
+popped order.
+topoSorted is stack.
+Integer[] ans = new Integer[topoSorted.size()];
+        // Revise - How to convert stack into an array?
+        topoSorted.toArray(ans);
+
+4. Revise - map.containsKey() , map.containsValue()
+
+5. Revise - Equals and hascode method
+
+6. x--;  if(x == 1) is quivalent to if(--x == 1)
+
+7. PQ API -> pq.poll(), pq.peek(), pq.offer()
+
+8. Collections.EMPTY_LIST is List of Objects not any object type. Neither can it be casted.
+
+9. Optional<Room> maxCountRoom = Arrays.stream(rooms).max(Comparator.comparingInt(Room::getCount));
+           // Applicable on object of type Optional
+           return maxCountRoom.map(Room::getRoomNo).orElse(0);
+
+10. Printing elements of a stream in java8
+Stream<String> streamCountries = Stream.of("Germany", "England",
+      "China", "Denmark", "Brazil");
+    streamCountries.forEach(s->System.out.println(s));
+
+    Arrays.stream(rooms).forEach(s -> System.out.println(s.roomNo +"-> "+ s.getCount()));
+
+11.

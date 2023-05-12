@@ -1,31 +1,37 @@
 # DS - Algo
 
-// Stack Class in JAVA - [Stack Class in Java - GeeksforGeeks](https://www.geeksforgeeks.org/stack-class-in-java/)
-
-How to intialize stack , Stack<Integer> <Integer> = new Stack<Integer>()
-
-// There is only call by value in java, not call by reference - [Call by Value and Call by Reference in java - javatpoint](https://www.javatpoint.com/call-by-value-and-call-by-reference-in-java) - See visited[] in graphs/DFS.java
-
-//This snippet prints 0
-
-```
-
-ArrayList<ArrayList<Integer>> adj = new ArrayList<>(V);
-
-        System.out.println(adj.size());
-```
+1. Graph Questions
+   Kahn's Algorithm for topological sorting.
 
 // Algorithmic Questions for
+
 Binary Search - Edge Case - low, mid, high are same element
 low and mid = i ; high = i+1
 
-
-
-// Topological Sorting (Graph)
-
 ``
-
-
 
 // TODO
 GeeksForGeeks - Greedy Problems
+
+//Google
+
+a) Framework -
+
+1. Clarify - Validity of Input, Limits of input, Return Type, Input Type, return modulo?, Longs/Integers?
+2. Assume - If input is sorted
+3. Start Simple - Define scope, input and expected output during this exercise. Ask for optimization that needs to be done- Time Complexity and Space Complexity
+4. Iterate
+5. Implement
+
+b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode](https://leetcode.com/problems/subtree-of-another-tree/)
+
+c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
+
+
+
+How to go about preparation of DSA?
+
+1) Reading questions/answers -> 5
+2) Thinking -> 2
+3) Writing -> 3-4
+4) Revision -> Previous topics
