@@ -1,7 +1,9 @@
 # DS - Algo
 
-1. Graph Questions
-   Kahn's Algorithm for topological sorting.
+**Concepts**
+
+1. Heaps are complete Binary Tree.
+
 
 // Algorithmic Questions for
 
@@ -10,10 +12,8 @@ low and mid = i ; high = i+1
 
 ``
 
-// TODO
-GeeksForGeeks - Greedy Problems
 
-//Google
+**Google Preparation**
 
 a) Framework -
 
@@ -27,11 +27,9 @@ b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Searc
 
 c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
 
+**How to go about preparation of DSA?**
 
-
-How to go about preparation of DSA?
-
-1) Reading questions/answers -> 5
+1) Reading questions/answers -> 3 LRU cache, Trie
 2) Thinking -> 2
-3) Writing -> 3-4
+3) Writing -> 1
 4) Revision -> Previous topics

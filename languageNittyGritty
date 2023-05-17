@@ -48,4 +48,10 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
 
     Arrays.stream(rooms).forEach(s -> System.out.println(s.roomNo +"-> "+ s.getCount()));
 
-11. Heaps are complete binary trees.
+11. LinkedList<Pair<String, Integer>> msgQ
+    Pair<String, Integer> head = msgQ.getFirst()
+    msgQ.removeFirst()
+    msgQ.remove(head.first)
+    msgQ.addLast(<new Message>)
+
+12.

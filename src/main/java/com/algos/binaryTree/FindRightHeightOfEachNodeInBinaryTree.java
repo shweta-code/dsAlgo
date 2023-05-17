@@ -3,7 +3,7 @@ package com.algos.binaryTree;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindLeftHeightOfEachNodeInBinaryTree {
+public class FindRightHeightOfEachNodeInBinaryTree {
 
     Map<Integer, Integer> map = new HashMap<>();
     public Map<Integer, Integer> findMaxHeightOfLeftSubTree(TreeNode node) {
@@ -26,7 +26,7 @@ public class FindLeftHeightOfEachNodeInBinaryTree {
 
         int leftHeight = findMaxHeightOfLeftSubTree(node.left, height+1);
         int rightHeight = findMaxHeightOfLeftSubTree(node.right, height + 1);
-        map.put(node.val, leftHeight - height);
+        map.put(node.val, rightHeight - height);
 
 
         return Math.max(leftHeight, rightHeight);
