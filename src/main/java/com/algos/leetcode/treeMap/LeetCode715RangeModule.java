@@ -1,40 +1,51 @@
 package com.algos.leetcode.treeMap;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
+import java.util.TreeMap;
 
-// Nice Solutions ->
-// https://leetcode.com/problems/range-module/discuss/2261620/Java-oror-TreeMap-oror-Explained-in-Detail
-// https://leetcode.com/problems/range-module/discuss/245463/Beat-100-Java-Binary-Search-Tree-implementation-short-and-concise
-// https://leetcode.com/problems/range-module/discuss/1258449/Java-Merge-Split-Intervals
 public class LeetCode715RangeModule {
 
-    Set<Integer> set = new HashSet<>();
+    TreeMap<Integer, Integer> treeMap;
 
     public LeetCode715RangeModule() {
-
+        treeMap = new TreeMap<>();
     }
 
     public void addRange(int left, int right) {
-        for (int i = left; i < right; i++) {
-            set.add(i);
+        Map.Entry<Integer, Integer> lFE = treeMap.floorEntry(left);
+        Map.Entry<Integer, Integer> rFE = treeMap.floorEntry(right);
+        if (lFE != null && lFE.getValue() >= left) {
+            left = lFE.getKey();
         }
+
+        if (rFE != null && rFE.getValue() >= right) {
+            right = rFE.getValue();
+        }
+
+        treeMap.subMap(left, right).clear();
+        treeMap.put(left, right);
     }
 
     public boolean queryRange(int left, int right) {
-        for (int i = left; i < right; i++) {
-            if (!set.contains(i)) {
-                return false;
-            }
-        }
+        // leftFloorEntry
+        Map.Entry<Integer, Integer> lFE = treeMap.floorEntry(left);
 
-        return true;
+        return lFE != null && lFE.getValue() >= right;
     }
 
     public void removeRange(int left, int right) {
-        for (int i = left; i < right; i++) {
-            set.remove(i);
-        }
-    }
 
+        Map.Entry<Integer, Integer> lFE = treeMap.floorEntry(left);
+        Map.Entry<Integer, Integer> rFE = treeMap.floorEntry(right);
+
+        if (lFE != null && lFE.getValue() >= left) {
+            treeMap.put(lFE.getKey(), left);
+        }
+
+        if (rFE != null && rFE.getValue() > right) {
+            treeMap.put(right, rFE.getValue());
+        }
+
+        treeMap.subMap(left, right).clear();
+    }
 }

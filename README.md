@@ -3,6 +3,7 @@
 **Concepts**
 
 1. Heaps are complete Binary Tree.
+2. Tree Map/ Red Black Trees in JAVA - [Internal Working of TreeMap in Java - GeeksforGeeks](https://www.geeksforgeeks.org/internal-working-of-treemap-in-java/)
 
 
 // Algorithmic Questions for
@@ -26,6 +27,8 @@ a) Framework -
 b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode](https://leetcode.com/problems/subtree-of-another-tree/)
 
 c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
+
+d) [Google Spring' 23 High Frequency - Study Plan - LeetCode](https://leetcode.com/studyplan/google-spring-23-high-frequency/)
 
 **How to go about preparation of DSA?**
 
