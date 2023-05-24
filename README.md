@@ -4,8 +4,9 @@
 
 1. Heaps are complete Binary Tree.
 2. Tree Map/ Red Black Trees in JAVA - [Internal Working of TreeMap in Java - GeeksforGeeks](https://www.geeksforgeeks.org/internal-working-of-treemap-in-java/)
-3. Graphs - Kahns, Topolgical Sort, Union Find, Cycle Detection
-4.
+3. Graphs - Kahns, Topolgical Sort, Union Find, Cycle Detection, Disjoint Set ([(3) Explore - LeetCode](https://leetcode.com/explore/featured/card/graph/618/disjoint-set/3840/))
+4. Quick Union is when you track of roots of each node. Quick Union is when you keep track of parent of each node not roots.
+5.
 
 * **1). hash function design**: the purpose of hash function is to map a key value to an address in the storage space, similarly to the system that we assign a postcode to each mail address.
   As one can image, for a good hash function, it should map different keys ***evenly*** across the storage space, so that we don't end up with the case that the majority of the keys are *concentrated* in a few spaces.
@@ -29,7 +30,7 @@ a) Framework -
 4. Iterate
 5. Implement
 
-b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode,](https://leetcode.com/problems/subtree-of-another-tree/).Design Problems in Editorail/Solution section of [Design Parking System - LeetCode](https://leetcode.com/problems/design-parking-system/editorial/?envType=study-plan-v2&id=programming-skills)  , Median of two sorted arrays,
+b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode,](https://leetcode.com/problems/subtree-of-another-tree/).Design Problems in Editorail/Solution section of [Design Parking System - LeetCode](https://leetcode.com/problems/design-parking-system/editorial/?envType=study-plan-v2&id=programming-skills)  , Median of two sorted arrays, [(3) The Latest Time to Catch a Bus - LeetCode](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/)
 
 c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
 
