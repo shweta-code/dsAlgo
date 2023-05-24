@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 // Solution - Implement Union and Find algorithm
-public class _1101EarliestWhenEveryoneFriends {
+public class LC1101EarliestWhenEveryoneFriends {
 
     public int earliestAcq(int[][] logs, int n) {
 
