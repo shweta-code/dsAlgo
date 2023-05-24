@@ -4,7 +4,13 @@
 
 1. Heaps are complete Binary Tree.
 2. Tree Map/ Red Black Trees in JAVA - [Internal Working of TreeMap in Java - GeeksforGeeks](https://www.geeksforgeeks.org/internal-working-of-treemap-in-java/)
+3. Graphs - Kahns, Topolgical Sort, Union Find, Cycle Detection
+4.
 
+* **1). hash function design**: the purpose of hash function is to map a key value to an address in the storage space, similarly to the system that we assign a postcode to each mail address.
+  As one can image, for a good hash function, it should map different keys ***evenly*** across the storage space, so that we don't end up with the case that the majority of the keys are *concentrated* in a few spaces.
+* **2). collision handling**: essentially the hash function reduces the vast key space into a limited address space. As a result, there could be the case where two different keys are mapped to the same address, which is what we call *'collision'*.
+  Since the collision is inevitable, it is important that we have a strategy to handle the collision.
 
 // Algorithmic Questions for
 
@@ -12,7 +18,6 @@ Binary Search - Edge Case - low, mid, high are same element
 low and mid = i ; high = i+1
 
 ``
-
 
 **Google Preparation**
 
@@ -24,7 +29,7 @@ a) Framework -
 4. Iterate
 5. Implement
 
-b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode](https://leetcode.com/problems/subtree-of-another-tree/)
+b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode,](https://leetcode.com/problems/subtree-of-another-tree/).Design Problems in Editorail/Solution section of [Design Parking System - LeetCode](https://leetcode.com/problems/design-parking-system/editorial/?envType=study-plan-v2&id=programming-skills)  , Median of two sorted arrays,
 
 c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
 
