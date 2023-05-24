@@ -4,7 +4,7 @@ import com.algos.leetcode.graph._1101EarliestWhenEveryoneFriends;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class _1101EarliestWhenEveryoneFriendsTests {
+public class LC1101EarliestWhenEveryoneFriendsTest {
 
     private final _1101EarliestWhenEveryoneFriends becomeFriends = new _1101EarliestWhenEveryoneFriends();
     @Test
