@@ -118,7 +118,21 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
         Conclusion ->    .subMap is exclusive of 10.
                             It will not delete (10,17) wali entry. .subMap deletes all entries key1, key2-1.
 
+17. Instantiate Array of List
+     List<Integer>[] adjList = new List[n];
+     // This is wrong -> List<Integer>[] adjList = new List<>[n];
+     // then you can say adjList[i] = new ArrayList<>();
 
+18. Pair<Integer, Integer> coords
+    coords.getKey()
+    coords.getValue()
+
+19. For graph questions, where you go up, down, right, left
+    you can use         int[] dirx = {0, 1, 0, -1};
+                        int[] diry = {-1, 0, 1, 0};
+
+
+20.
 
 
 

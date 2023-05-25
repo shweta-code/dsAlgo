@@ -6,7 +6,7 @@
 2. Tree Map/ Red Black Trees in JAVA - [Internal Working of TreeMap in Java - GeeksforGeeks](https://www.geeksforgeeks.org/internal-working-of-treemap-in-java/)
 3. Graphs - Kahns, Topolgical Sort, Union Find, Cycle Detection, Disjoint Set ([(3) Explore - LeetCode](https://leetcode.com/explore/featured/card/graph/618/disjoint-set/3840/))
 4. Quick Union is when you track of roots of each node. Quick Union is when you keep track of parent of each node not roots.
-5.
+5. Kahn's algorithm, Union Find can be used to detect cycle in graph.
 
 * **1). hash function design**: the purpose of hash function is to map a key value to an address in the storage space, similarly to the system that we assign a postcode to each mail address.
   As one can image, for a good hash function, it should map different keys ***evenly*** across the storage space, so that we don't end up with the case that the majority of the keys are *concentrated* in a few spaces.
