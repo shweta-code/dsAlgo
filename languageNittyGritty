@@ -132,7 +132,11 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
                         int[] diry = {-1, 0, 1, 0};
 
 
-20.
+20. private boolean isAnInteger(double pow) {
+            return pow % 1 == 0;
+        }
+
+21. For arrays, array.length, for string, string.length(), for list, list.size()
 
 
 

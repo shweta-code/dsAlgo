@@ -2,7 +2,7 @@ package com.algos.binaryTree;
 
 public class TreeNode {
 
-    Integer val;
+    public Integer val;
     public TreeNode left;
     public TreeNode right;
 
