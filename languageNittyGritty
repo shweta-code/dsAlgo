@@ -138,5 +138,13 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
 
 21. For arrays, array.length, for string, string.length(), for list, list.size()
 
+22. LinkedList API->
+    int index = this.container.indexOf(key); if key does not exist , it will return -1.
+    this.container.addFirst(key);
+    this.container.remove(key);
+
+23. In JAVA, linked hash map can be used to build LRU cache, see design HashMap in leetcode.
+
+24. System.arrayCopy(srcArr, srcPos, destArr, destPos, length);
 
 

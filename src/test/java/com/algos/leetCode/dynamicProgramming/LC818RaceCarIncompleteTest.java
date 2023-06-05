@@ -1,12 +1,12 @@
 package com.algos.leetCode.dynamicProgramming;
 
-import com.algos.leetcode.dynamicProgramming.LC818RaceCarWrong;
+import com.algos.leetcode.bfs.LC818RaceCarIncomplete;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LC818RaceCarTest {
+public class LC818RaceCarIncompleteTest {
 
-    private final LC818RaceCarWrong raceCar = new LC818RaceCarWrong();
+    private final LC818RaceCarIncomplete raceCar = new LC818RaceCarIncomplete();
     @Test
     public void test1() {
         int noOfInstructions = raceCar.racecar(1);
@@ -48,5 +48,11 @@ public class LC818RaceCarTest {
     public void test7() {
         int noOfInstructions = raceCar.racecar(2);
         Assert.assertEquals(4, noOfInstructions);
+    }
+
+    @Test
+    public void test8() {
+        int noOfInstructions = raceCar.racecar(5);
+        Assert.assertEquals(7, noOfInstructions);
     }
 }
