@@ -20,6 +20,7 @@
 * Revise -
 * Hashing solution in - [(3) Subtree of Another Tree - LeetCode
 * ](https://leetcode.com/problems/subtree-of-another-tree/solution/)
+* **inorder traversal handles the nodes in sorted order.**
 
 **Designs**
 

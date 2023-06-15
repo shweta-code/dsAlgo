@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class MedianOfTwoSortedArraysTest {
 
-    private final IMedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOftwoSortedArrays();
+    private final IMedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArraysUsingBS();
 
     @Test
     public void test1() {
@@ -53,5 +53,11 @@ public class MedianOfTwoSortedArraysTest {
     public void test8() {
         double median = medianOfTwoSortedArrays.calculateMedian(new int[]{ 1, 2, 7, 12, 13}, new int[]{3, 4, 5, 6});
         Assert.assertEquals(5, median, 0.0);
+    }
+
+    @Test
+    public void test9() {
+        double median = medianOfTwoSortedArrays.calculateMedian(new int[]{ 12, 13, 14}, new int[]{1, 2, 3, 4, 5, 6, 7});
+        Assert.assertEquals(5.5, median, 0.0);
     }
 }

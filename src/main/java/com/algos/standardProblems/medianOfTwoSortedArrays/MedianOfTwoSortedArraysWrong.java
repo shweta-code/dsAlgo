@@ -2,6 +2,7 @@ package com.algos.standardProblems.medianOfTwoSortedArrays;
 
 // InspiredFrom
 // Approach#2 -> https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
+// Infact this is inspired from Approach - Median of two sorted arrays of different sizes using Simulated stack:
 public class MedianOfTwoSortedArraysWrong implements IMedianOfTwoSortedArrays {
 
     public double calculateMedian(int[] arr1, int[] arr2) {
@@ -16,7 +17,7 @@ public class MedianOfTwoSortedArraysWrong implements IMedianOfTwoSortedArrays {
         int j = 0;
         int median =  (len1 + len2) % 2 == 0 ? ((len1 + len2) / 2) - 1 : (len1 + len2) / 2;
         int step = 0;
-        while (i < len1 && j < len2 && step < median) {
+        while (i < len1 && j < len2 && step  < median) {
             if (arr1[i] < arr2[j]) {
                 i++;
                 step++;
