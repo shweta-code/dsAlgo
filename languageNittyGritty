@@ -31,9 +31,9 @@ Integer[] ans = new Integer[topoSorted.size()];
 
 5. Revise - Equals and hascode method
 
-6. x--;  if(x == 1) is quivalent to if(--x == 1)
+6. x--;  if(x == 1) is equivalent to if(--x == 1)
 
-7. PQ API -> pq.poll(), pq.peek(), pq.offer()
+7. PQ API -> pq.poll(), pq.peek(), pq.offer(<value>)
 
 8. Collections.EMPTY_LIST is List of Objects not any object type. Neither can it be casted.
 
@@ -144,6 +144,7 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
     this.container.remove(key);
 
 23. In JAVA, linked hash map can be used to build LRU cache, see design HashMap in leetcode.
+There is .removeEldestEntry
 
 24. System.arrayCopy(srcArr, srcPos, destArr, destPos, length);
 
