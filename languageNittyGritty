@@ -132,7 +132,8 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
                         int[] diry = {-1, 0, 1, 0};
 
 
-20.
+20. Lambdas are pure functions.
+    If a variable is used from outside of a lambda function. It must be final.
 
 
 
