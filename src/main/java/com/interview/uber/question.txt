@@ -1,0 +1,173 @@
+package com.test.uber;
+
+// Suppose you have a big text log file and there are three columns:
+
+// ---------------------------------
+// Name    |  City     | Timestamp  |
+
+// ---------------------------------
+// Jamie   |   city1   |     ts4
+// Dana    |   city1   |     ts3
+// Jamie   |   city2   |     ts1
+// Jamie   |   city3   |     ts3
+// Dana    |   city3   |     ts2
+// Jamie   |   city4   |     ts2
+// Dana    |   city4   |     ts1
+// ---------------------------------
+
+
+
+// The first column is a rider name, the second column is a city name, the final column is a timestamp (32 bit integer).
+// This log file maintains a history of riders. We define a "triple" to be a tuple of three consecutive cities a rider has been to that are ordered by timestamp.
+// Suppose t1<t2<t3<t4, then we will have the following triples:
+// for Jamie, we have: (city2, city4, city3) , (city4, city3, city1)
+// for Dana, we have: (city4, city3, city1)
+
+// Write a program
+// - to output all the triples in the file and
+// - for each triple, output the count of unique riders that have been to that triple.
+
+// For the example input, the output would be
+// (city2, city4, city3) 1
+// (city4, city3, city1) 2 ...
+
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.zip.CRC32;
+
+public class Problem {
+    public static void main(String[] args) {
+         String[][] data = new String[][]{
+                 {"Jamie","city1","1231321249"},
+                 {"Dana","city1","1231321248"},
+                 {"Jamie", "city2", "1231321245"},
+                 {"Jamie", "city3", "1231321248"},
+                 {"Dana", "city3", "1231321247"},
+                 {"Jamie", "city4", "1231321247"},
+                 {"Dana", "city4", "1231321245"},
+         };
+
+        // Jamie log(noof cities by each rider)
+
+        // iterate over input to build Map
+        Map<String, TreeMap<Integer, String>> riderMap = new HashMap<>();
+        for(int i = 0 ; i < data.length(); i++){
+            String[] entry = data[i];
+            String rider = entry[0];
+            String city = entry[1];
+            String timestamp = entry[2];
+            riderMap.get(rider);
+
+            if(riderMap.containsKey(rider)){
+
+                TreeMap map = riderMap.get(rider);
+                map.put(timestamp, city));
+            } else {
+                // add  a new treemap
+            }
+
+
+        }
+
+        riderMap.forEach((k, v) ->{
+            if(v.size() < 3){
+
+            } else {
+
+                Set<Map.Entry<Integer, String>> entries = v.entrySet();
+                Object[] array = entries.toArray();
+                // logic should process
+                for(int i = 0; i < set.length(); i++){
+
+                    if(i )
+                    city[0] = array[i++];
+                    city[1] = array[i++];
+                    city[2] = array[i++];
+
+                }
+            }
+
+        });
+
+
+        C4 -> C3 -> C2 (1)
+        C1 -> C2 -> C5 (2)
+
+        C4 -> C1 -> C2
+
+                1. Trie?
+            2. Distributed env?
+
+       Come back ->  3. TreeMap ->
+            Design of the class
+
+
+
+    }
+
+
+    map(File logFile){
+
+
+        return Map<Rider, TreeMap>
+    }
+
+    reduce(Map) {
+
+
+        return Map<Triplets, Count/Integer>
+    }
+
+}
+class CityTriplet{
+
+    City[] cities = new City[3];
+}
+
+public class Solution{
+
+    public static void main(String[] args) {
+
+
+
+    }
+
+
+}
+
+class TripletAggregator {
+    Mappable mapper;
+    Reducable reducer;
+
+    aggregate(){
+         Map<Rider, TreeMap<Long, City>>  map = mapper(File file);
+         reduce(map);
+    }
+
+
+}
+
+
+
+class Mapper implements Mappable {
+
+
+}
+
+interface Mappable<T,K>{
+    T map(K k);
+
+}
+
+interface Reducable {
+
+
+}
+
+class Reducer implements Reducable {
+
+}
+

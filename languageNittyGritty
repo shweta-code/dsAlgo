@@ -29,7 +29,7 @@ Integer[] ans = new Integer[topoSorted.size()];
 
 4. Revise - map.containsKey() , map.containsValue()
 
-5. Revise - Equals and hascode method
+5. Revise - Equals and hashcode method
 
 6. x--;  if(x == 1) is quivalent to if(--x == 1)
 
@@ -134,6 +134,11 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
 
 20. Lambdas are pure functions.
     If a variable is used from outside of a lambda function. It must be final.
+
+21. Convert stack of characters into String
+Stack<Character> ans = new Stack();
+String.valueOf(ans);
+
 
 
 
