@@ -1,7 +1,5 @@
 package com.algos.leetcode.binaryTree;
 
-import sun.reflect.generics.tree.Tree;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,23 +32,17 @@ public class LeetCode2458 {
 
 
         System.out.println(" Left map ");
-        leftMap.forEach((key, val) -> {
-            System.out.println("key -> "+ key + " val -> "+ val);
-        });
+        leftMap.forEach((key, val) -> System.out.println("key -> "+ key + " val -> "+ val));
 
 
         System.out.println(" Right Map ");
-        rightMap.forEach((key, val) -> {
-            System.out.println("key -> "+ key + " val -> "+ val);
-        });
+        rightMap.forEach((key, val) -> System.out.println("key -> "+ key + " val -> "+ val));
 
         removedMap.put(root.val, 0);
         evaluateRemovedMap(root, 0);
 
         System.out.println(" Removed Map ");
-        removedMap.forEach((key, val) -> {
-            System.out.println("key -> "+ key + " val -> "+ val);
-        });
+        removedMap.forEach((key, val) -> System.out.println("key -> "+ key + " val -> "+ val));
 
         int[] output = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {

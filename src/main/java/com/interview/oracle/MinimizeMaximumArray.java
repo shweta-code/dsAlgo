@@ -1,10 +1,5 @@
 package com.interview.oracle;
 
-import com.sun.xml.internal.fastinfoset.tools.XML_SAX_StAX_FI;
-
-import java.util.OptionalInt;
-import java.util.stream.IntStream;
-
 public class MinimizeMaximumArray {
     public static void main(String[] args) {
         int[] arr = new int[]{1,2,3,7,6};
@@ -14,7 +9,7 @@ public class MinimizeMaximumArray {
     }
 
     private static void minimzeMaximumOfArr(int[] arr) {
-        int maxIndex = -1;
+        int maxIndex;
         do{
             maxIndex = MaxIndex(arr);
             if(maxIndex > 0) {

@@ -1,4 +1,4 @@
-package com.algos.amazon;
+package com.interview.amazon;
 
 import java.util.*;
 

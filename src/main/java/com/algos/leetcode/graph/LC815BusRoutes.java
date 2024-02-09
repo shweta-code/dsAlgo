@@ -14,13 +14,12 @@ public class LC815BusRoutes {
 
         int len = routes.length;
         for(int i = 0 ; i < len; i++){
-            int busNo = i;
-            int[] busRoute = routes[busNo];
+            int[] busRoute = routes[i];
             int busRouteLen = busRoute.length;
             if(busRouteLen > 1) {
                 for (int j = 0; j < busRouteLen; j++) {
                     List<StopAndBusNo> connectingStops = routeMap.getOrDefault(busRoute[j], new ArrayList<>());
-                    connectingStops.add(new StopAndBusNo(busRoute[(j + 1) % busRouteLen], busNo));
+                    connectingStops.add(new StopAndBusNo(busRoute[(j + 1) % busRouteLen], i));
                     routeMap.put(busRoute[j], connectingStops);
                 }
             }
@@ -33,8 +32,8 @@ public class LC815BusRoutes {
         List<StopAndBusNo> stopAndBusNo = routeMap.get(source);
         Set<Integer> visited = new HashSet<>();
         visited.add(source);
-        for(int i = 0; i < stopAndBusNo.size(); i++){
-            stack.add(new StopInfo(stopAndBusNo.get(i), 1));
+        for (StopAndBusNo andBusNo : stopAndBusNo) {
+            stack.add(new StopInfo(andBusNo, 1));
 
         }
 
@@ -48,12 +47,12 @@ public class LC815BusRoutes {
             }
             if(!visited.contains(stopNo)) {
                 stopAndBusNo = routeMap.get(stopNo);
-                for (int i = 0; i < stopAndBusNo.size(); i++) {
+                for (StopAndBusNo andBusNo : stopAndBusNo) {
 
-                    if (stopInfo.stopAndBusNo.busNo == stopAndBusNo.get(i).busNo)
-                        stack.add(new StopInfo(stopAndBusNo.get(i), stopInfo.count));
+                    if (stopInfo.stopAndBusNo.busNo == andBusNo.busNo)
+                        stack.add(new StopInfo(andBusNo, stopInfo.count));
                     else {
-                        stack.add(new StopInfo(stopAndBusNo.get(i), stopInfo.count + 1));
+                        stack.add(new StopInfo(andBusNo, stopInfo.count + 1));
                     }
 
                 }
@@ -75,7 +74,7 @@ public class LC815BusRoutes {
 
     }
 
-    class StopAndBusNo{
+    class  StopAndBusNo{
 
         public int stop;
         public int busNo;

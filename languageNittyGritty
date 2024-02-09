@@ -8,7 +8,7 @@ ArrayList<String> gfg = new ArrayList<String>() {
         };
 
 2. How to intialize stack?
-    Stack<Integer> <Integer> = new Stack<Integer>()
+    Stack<Integer> stack = new Stack<Integer>()
     (https://www.geeksforgeeks.org/stack-class-in-java/)
 
 3. There is only call by value in java, not call by reference -
@@ -31,7 +31,7 @@ Integer[] ans = new Integer[topoSorted.size()];
 
 5. Revise - Equals and hashcode method
 
-6. x--;  if(x == 1) is quivalent to if(--x == 1)
+6. x--;  if(x == 1) is equivalent to if(--x == 1)
 
 7. PQ API -> pq.poll(), pq.peek(), pq.offer()
 

@@ -1,4 +1,4 @@
-package com.algos.amazon;
+package com.interview.amazon;
 
 public class IsRobotBounded {
     public static void main(String[] args) {

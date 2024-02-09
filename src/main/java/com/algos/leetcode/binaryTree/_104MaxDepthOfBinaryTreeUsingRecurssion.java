@@ -1,11 +1,7 @@
 package com.algos.leetcode.binaryTree;
 
 import com.algos.binaryTree.TreeNode;
-import com.sun.org.apache.xpath.internal.objects.XNodeSet;
-import javafx.util.Pair;
 
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class _104MaxDepthOfBinaryTreeUsingRecurssion {
 

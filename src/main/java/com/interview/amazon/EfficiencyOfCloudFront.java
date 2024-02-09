@@ -1,4 +1,4 @@
-package com.algos.amazon;
+package com.interview.amazon;
 
 import java.util.*;
 
@@ -14,7 +14,7 @@ public class EfficiencyOfCloudFront {
         */
 
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("10 9");
         list.add("1 2");
         list.add("8 5");

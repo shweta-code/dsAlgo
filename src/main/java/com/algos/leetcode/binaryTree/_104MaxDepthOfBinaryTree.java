@@ -1,10 +1,9 @@
 package com.algos.leetcode.binaryTree;
 
+import com.algos.Pair;
 import com.algos.binaryTree.TreeNode;
-import javafx.util.Pair;
 
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
 
 public class _104MaxDepthOfBinaryTree {

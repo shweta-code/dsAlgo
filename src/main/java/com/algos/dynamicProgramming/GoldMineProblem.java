@@ -1,6 +1,12 @@
 package com.algos.dynamicProgramming;
 
-/*Given a gold mine of n*m dimensions. Each field in this mine contains a positive integer which is the amount of gold in tons. Initially the miner is at first column but can be at any row. He can move only (right->,right up /,right down\) that is from a given cell, the miner can move to the cell diagonally up towards the right or right or diagonally down towards the right. Find out maximum amount of gold he can collect.
+/*Given a gold mine of n*m dimensions. Each field in this mine contains a
+ positive integer which is the amount of gold in tons.
+ Initially the miner is at first column but can be at any row.
+ He can move only (right->,right up /,right down\) that is from a given cell,
+ the miner can move to the cell diagonally up towards the
+ right or right or diagonally down towards the right.
+ Find out maximum amount of gold he can collect.
 
         Examples:
 
@@ -62,7 +68,7 @@ public class GoldMineProblem {
                     c = mat[i + 1][j + 1];
                 }
                 mat[i][j] = mat[i][j] + Math.max(Math.max(a, b), c);
-                result = result > mat[i][j] ? result : mat[i][j];
+                result = Math.max(result, mat[i][j]);
             }
         }
         System.out.println(result);

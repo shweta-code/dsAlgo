@@ -3,9 +3,12 @@ package com.algos.dynamicProgramming;
 
 public class LongestPathInAMatrixWithGivenConstraints {
 
-    /*Given a n*n matrix where all numbers are distinct, find the maximum length path (starting from any cell) such that all cells along the path are in increasing order with a difference of 1.
+    /*Given a n*n matrix where all numbers are distinct, find the maximum
+    length path (starting from any cell) such that all cells along the path are
+    in increasing order with a difference of 1.
 
-    We can move in 4 directions from a given cell (i, j), i.e., we can move to (i+1, j) or (i, j+1) or (i-1, j) or (i, j-1) with the condition that the adjacent cells have a difference of 1.
+    We can move in 4 directions from a given cell (i, j), i.e., we can move
+    to (i+1, j) or (i, j+1) or (i-1, j) or (i, j-1) with the condition that the adjacent cells have a difference of 1.
 
     Example:
 
@@ -30,7 +33,7 @@ public class LongestPathInAMatrixWithGivenConstraints {
             for (int j = 0; j < n; j++) {
                 if (dp[i][j] == -1) {
                     dp[i][j] = findAns(mat, i, j, dp, m, n);
-                    result = result > dp[i][j] ? result : dp[i][j];
+                    result = Math.max(result, dp[i][j]);
                 }
             }
         }
