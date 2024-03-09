@@ -1,6 +1,8 @@
 package com.algos.leetcode.graph;
 
-import javafx.util.Pair;
+
+
+import com.algos.Pair;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -139,6 +139,8 @@ Stream<String> streamCountries = Stream.of("Germany", "England",
 Stack<Character> ans = new Stack();
 String.valueOf(ans);
 
+22. StringBuilder is nice. But in first go, first algorithm iteration, you should use String as it is immutable and less prone to bugs.
+
 
 
 

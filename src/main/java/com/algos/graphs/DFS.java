@@ -64,6 +64,7 @@ public class DFS {
                 dfs(i, adj, visited, graphTraversal);
             }
         }
+        System.out.println(Arrays.toString(graphTraversal.toArray()));
         return graphTraversal;
     }
 
