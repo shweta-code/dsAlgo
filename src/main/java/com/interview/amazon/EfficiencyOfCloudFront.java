@@ -2,6 +2,9 @@ package com.interview.amazon;
 
 import java.util.*;
 
+
+// I am not sure why I am sorting
+// May be this can be done using disjoint set
 public class EfficiencyOfCloudFront {
 
       /*Given n nodes and list of edges (integers separated by space) in a graph, you have to find
@@ -64,7 +67,7 @@ public class EfficiencyOfCloudFront {
         int efficieny = 0;
         efficieny += singleVertexSetCount;
         for (int i : verticesInIsolatedSet) {
-            efficieny += Math.sqrt(i);
+            efficieny += (int) Math.sqrt(i);
         }
         return efficieny;
 

@@ -1,4 +1,4 @@
-package com.algos.graphs;
+package com.algos.graphs.theory;
 
 // Types oF Graph -> https://www.tutorialspoint.com/types-of-graph
 public class GraphRepresentation {

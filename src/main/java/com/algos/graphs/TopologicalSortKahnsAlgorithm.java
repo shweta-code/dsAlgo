@@ -4,6 +4,7 @@ import java.util.*;
 
 // https://practice.geeksforgeeks.org/problems/topological-sort/1
 // Kahns algo uses BFS
+// Topological Sorting can also be used to detect cycles in Directed and Undirected Graph
 public class TopologicalSortKahnsAlgorithm {
 
     // Visually, topological sort can be seen here
@@ -40,7 +41,11 @@ public class TopologicalSortKahnsAlgorithm {
             }
         }
 
-
+        // Check for cycle
+        if (topoSorted.size() != V) {
+            System.out.println("Graph contains cycle!");
+            return new int[1];
+        }
 
         Integer[] ans = new Integer[topoSorted.size()];
         // Revise - How to convert stack into an array?

@@ -141,6 +141,13 @@ String.valueOf(ans);
 
 22. StringBuilder is nice. But in first go, first algorithm iteration, you should use String as it is immutable and less prone to bugs.
 
+23. How to reverse an array
+    Collections.reverse(Arrays.asList(ans));
+
+24. .toArray() will convert into Object[]
+    Convert a collection tino array of specific class type
+
+
 
 
 
