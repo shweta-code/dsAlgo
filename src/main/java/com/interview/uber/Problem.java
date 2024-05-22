@@ -2,6 +2,8 @@ package com.interview.uber;
 
 import java.util.*;
 
+// Related Link
+// https://leetcode.com/discuss/interview-question/2031524/Uber-or-SSE-or-Round-1
 public class Problem {
   // Problem in Question.txt
   public static void main(String[] args) {
@@ -16,16 +18,13 @@ public class Problem {
       };
 
 
-      Arrays.sort(data, new Comparator<String[]>() {
-          @Override
-          public int compare(String[] o1, String[] o2) {
-              // basic type checks
-              //look up standard compareTo function
-              if(o1[0].compareTo(o2[0]) == 0){
-                  return o1[2].compareTo(o2[2]);
-              } else {
-                  return o1[0].compareTo(o2[0]);
-              }
+      Arrays.sort(data, (o1, o2) -> {
+          // basic type checks
+          //look up standard compareTo function
+          if(o1[0].compareTo(o2[0]) == 0){
+              return o1[2].compareTo(o2[2]);
+          } else {
+              return o1[0].compareTo(o2[0]);
           }
       });
 

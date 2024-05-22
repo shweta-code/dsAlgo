@@ -1,12 +1,12 @@
 package com.algos.leetCode.graph;
 
-import com.algos.leetcode.graph.LeetCode207CourseSchedule;
+import com.algos.leetcode.graph.LC207CourseScheduleUsingTopoSort;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class LeetCode207CourseScheduleTest {
 
-    private final LeetCode207CourseSchedule courseSchedule = new LeetCode207CourseSchedule();
+    private final LC207CourseScheduleUsingTopoSort courseSchedule = new LC207CourseScheduleUsingTopoSort();
 
     @Test
     public void testTwoCyclicNodes() {

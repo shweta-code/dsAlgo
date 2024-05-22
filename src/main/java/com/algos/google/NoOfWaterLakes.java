@@ -9,6 +9,8 @@ package com.algos.google;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
+// TODO
 // How best to consider this information
 // I started with marking these as pixels
 // Basically a matrix that has RGB co-ordinates to represent satellite photo
@@ -59,7 +61,7 @@ public class NoOfWaterLakes {
                         // push them in q and mark them visited
                     }
 
-        return noOfIslands -1;
+        //return noOfIslands -1;
     }
 
 

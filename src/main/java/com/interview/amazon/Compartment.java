@@ -5,8 +5,8 @@ import java.util.*;
 // The solution to this question is not very elegant.
 // We are first iterating over entire array to create a wall index
 // Then we are doing binary search for each start and end index
-// Overall the time complexity of this solution will be O(n)
-// The space complexity of this solutin will also be O(n)
+// Overall the time complexity of this solution will be O(n) because we have iterated over the whole array as first step
+// The space complexity of this solution will also be O(n)
 public class Compartment {
     /*Given a string = |*|***| containing of | and *
     | - start/end of container

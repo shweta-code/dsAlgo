@@ -18,22 +18,60 @@ public class EfficiencyOfCloudFront {
 
     }
 
-    public void findIndividualSets(int[][] edges, int n) {
 
-        int[] graphs = new int[n];
-        // fill above array with -1
-        int noOfGraphs = 0;
-        Map<Integer, Integer> edgeToSetMapping = new HashMap<>();
-        // iterate through edges
-        // vertex 1, vertex2
-        // if vertex1 is visited && !vertex 2 is visited
-        // put vertex2 value in vertex1
-        // else if vertex1 is visited && !vertex 2 is visited
-        // put vertex1 value in vertex2
-        // else if !vertex1 and !vertex2 is visited
-        // noOfGraphs
-        // vertex1[] = noOfGraphs
-        // else if vertex1 is visited && vertex 2 is visited
-        // ignore
+    public int calculateEfficiency(int noOfNodes, int[][]  edgesList) {
+        // We can use QuickFind algorithm
+        // it will give us all roots
+        // and for each root we can find no of nodes in graph
+        QuickFind quickFind = new QuickFind(noOfNodes);
+        for (int[] edges : edgesList) {
+            // String[] s = string.split(" ");
+            quickFind.union(edges[0], edges[1]);
+        }
+        // System.out.println(quickFind.findEfficiency());
+        return (int) quickFind.findEfficiency();
+
+    }
+
+    static class QuickFind{
+        private final int noOfNodes;
+        private final int[] root;
+
+        public QuickFind(int noOfNodes) {
+            this.noOfNodes = noOfNodes;
+            root = new int[noOfNodes];
+            for (int i = 0; i < noOfNodes; i++) {
+                root[i] = i;
+            }
+        }
+
+        public int find(int x){
+            return root[x];
+        }
+
+        public void union(int x, int y) {
+            int rootX = find(x);
+            int rootY = find(y);
+
+            for (int i = 0; i < noOfNodes; i++) {
+                if (root[i] == rootX) {
+                    root[i] = rootY;
+                }
+            }
+        }
+
+        public double findEfficiency() {
+            double eff = 0;
+            Map<Integer, Integer> rootToCount = new HashMap<>();
+            for (int i = 0; i < noOfNodes; i++) {
+                rootToCount.put(root[i], rootToCount.getOrDefault(root[i], 0) + 1);
+            }
+
+            for (Integer value : rootToCount.values()) {
+                eff += Math.sqrt(value);
+            }
+
+            return eff;
+        }
     }
 }

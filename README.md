@@ -33,12 +33,12 @@ a) Framework -
 b)  Have to do Combinatorics, Divide and Conquer, BST question too, Binary Search Algo, Water Rain Trapping, Montone Increasing Q, [Word Ladder - LeetCode](https://leetcode.com/problems/word-ladder/), Heap, [Subtree of Another Tree - LeetCode,](https://leetcode.com/problems/subtree-of-another-tree/).Design Problems in Editorail/Solution section of [Design Parking System - LeetCode](https://leetcode.com/problems/design-parking-system/editorial/?envType=study-plan-v2&id=programming-skills)  , Median of two sorted arrays, [(3) The Latest Time to Catch a Bus - LeetCode](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/)
 
 c) Binary Search Questions- [Binary Search Interview Questions - Google, Facebook, Amazon - YouTube](https://www.youtube.com/watch?v=W9QJ8HaRvJQ)
+This is a nice template
+https://leetcode.com/discuss/study-guide/786126/Python-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems
 
 d) [Google Spring' 23 High Frequency - Study Plan - LeetCode](https://leetcode.com/studyplan/google-spring-23-high-frequency/)
 
-**How to go about preparation of DSA?**
+e) You can practice - https://leetcode.com/discuss/interview-question/3378926/System-Design-or-Uber-or-SSE
+https://leetcode.com/discuss/interview-question/2099405/Uber-SSE-Phone-Screen-NY
 
-1) Reading questions/answers -> 3 LRU cache, Trie
-2) Thinking -> 2
-3) Writing -> 1
-4) Revision -> Previous topics
+
